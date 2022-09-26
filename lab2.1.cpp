@@ -2,10 +2,17 @@
 //
 
 #include <iostream>
+#include <Windows.h>
+
+typedef struct
+{
+    int X, Y;
+} TPoint;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
