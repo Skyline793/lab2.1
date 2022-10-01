@@ -34,7 +34,7 @@ double TriangleCalcSquare(Triangle t) { //вычисление площади треугольника
 
 double TriangleCalcPerimeter(Triangle t) { //вычисление периметра треугольника
     int x1 = t.A.X, y1 = t.A.Y, x2 = t.B.X, y2 = t.B.Y, x3 = t.C.X, y3 = t.C.Y;
-    double AB = sqrt((x2 - x1) ^ (x2 - x1) + (y2 - y1) ^ (y2 - y1));
+    double AB = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
     double AC = sqrt((x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1));
     double BC = sqrt((x3 - x2) * (x3 - x2) + (y3 - y2) * (y3 - y2));
     double P = AB + AC + BC;
